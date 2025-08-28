@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import supabaseAdmin from '../../../lib/supabaseAdmin';
+import supabaseClient from '../../../lib/supabaseAdmin';
 
 type Data = { ok: boolean; id?: string; error?: string };
 
@@ -30,7 +30,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     return res.status(500).json({ ok: false, error: 'Supabase not configured on server' });
   }
 
-  const supabase = supabaseAdmin;
+  const supabase = supabaseClient;
   console.log('[delete-request] supabase client obtained from supabaseAdmin');
 
   const { email, reason, details } = req.body ?? {};

@@ -4,6 +4,7 @@ import Features from '../components/Features';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import VideoGallery from '@/components/VideoGallery';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -34,9 +35,9 @@ export default function Home() {
               <p className="text-gray-400 mb-4">
                 The ultimate focus timer app to master your productivity.
               </p>
-              <a href="/timvis" className="text-blue-400 hover:underline">
+              <Link href="/timvis" className="text-blue-400 hover:underline">
                 Learn More
-              </a>
+              </Link>
             </div>
             <div className="bg-gray-800 rounded-lg shadow p-6">
               <div className="flex items-center justify-center mb-4">

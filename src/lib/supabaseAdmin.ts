@@ -32,5 +32,6 @@ if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
   }
 }
 
-export { supabaseAdmin };
+// Export as const to avoid mutable export warning
+export const supabaseAdminClient = supabaseAdmin;
 export default supabaseAdmin;

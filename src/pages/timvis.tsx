@@ -122,7 +122,7 @@ export default function TimVis() {
 								No Visibility
 							</h3>
 							<p className="text-gray-400">
-								You can't improve what you don't measure. Most people have no idea
+								You can&apos;t improve what you don&apos;t measure. Most people have no idea
 								where their productive time actually goes.
 							</p>
 						</div>
