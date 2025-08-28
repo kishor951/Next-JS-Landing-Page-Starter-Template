@@ -27,7 +27,7 @@ yarn-error.log*
 
 # dotenv local files
 .env*.local
-
+.env.example
 # local folder
 local
 
