@@ -7,6 +7,8 @@ import Hero from '../components/Hero';
 import Navigation from '../components/Navigation';
 import SEO from '../components/SEO';
 
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
   return (
     <>
